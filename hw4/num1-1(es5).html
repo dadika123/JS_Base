@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Product(name, price) {
+            this.name = name;
+            this.price = +price;
+
+            this.make25PercentDiscount = function () {
+                this.price *= 0.75;
+                alert(this.price);
+            }
+        }
+        
+        const product1 = new Product('product1', 1000);
+        product1.make25PercentDiscount();
+    </script>
+</body>
+
+</html>
